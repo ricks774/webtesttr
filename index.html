@@ -5,30 +5,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans+TC|Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
   <nav>
+    <div class="logo">
+      <svg class="logo-svg__item" width="152" height="28" viewBox="0 0 152 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.79394 26.2036L5.79599 26.2043C7.57797 26.8231 9.4335 27.132 11.36 27.132C13.4694 27.132 15.2801 26.8258 16.7751 26.1924L16.7751 26.1924L16.7816 26.1895C18.2633 25.5366 19.3932 24.6534 20.1303 23.5219C20.8799 22.3841 21.256 21.1247 21.256 19.756C21.256 18.1353 20.837 16.7931 19.9433 15.7897C19.0975 14.8165 18.0584 14.0985 16.8336 13.6381C15.6757 13.1705 14.1644 12.7087 12.3078 12.2506L12.3075 12.2505C10.7578 11.869 9.52675 11.5255 8.60961 11.2202C7.7613 10.9066 7.05938 10.4763 6.49377 9.93451C6.00227 9.4197 5.74 8.73756 5.74 7.84C5.74 6.65795 6.21436 5.71092 7.19876 4.96192L7.20004 4.96094C8.20424 4.19177 9.74471 3.768 11.9 3.768C12.9993 3.768 14.1269 3.93968 15.2843 4.28691L15.2843 4.287L15.2932 4.28948C16.4426 4.61133 17.5234 5.10551 18.5368 5.77348L19.0381 6.10388L19.2724 5.55107L20.1724 3.42707L20.3313 3.052L19.9961 2.82055C18.9358 2.08847 17.6844 1.52759 16.2499 1.13138C14.8367 0.710411 13.3862 0.5 11.9 0.5C9.78901 0.5 7.98626 0.818635 6.51147 1.47975C5.05085 2.13451 3.9346 3.03141 3.19958 4.18535C2.47386 5.30075 2.112 6.54739 2.112 7.912C2.112 9.55654 2.53075 10.921 3.42248 11.9478L3.42244 11.9479L3.42738 11.9534C4.29405 12.922 5.3293 13.6507 6.52861 14.1356L6.52857 14.1356L6.53718 14.1389C7.69118 14.5809 9.22434 15.0424 11.1293 15.5247L11.1293 15.5247L11.1342 15.5259C12.7101 15.908 13.9232 16.2623 14.7831 16.5876L14.783 16.5878L14.7943 16.5917C15.6194 16.8816 16.297 17.3001 16.8384 17.8416L16.8384 17.8416L16.8454 17.8484C17.3552 18.3385 17.628 19.0037 17.628 19.9C17.628 21.0493 17.1492 21.9844 16.1401 22.7369C15.1356 23.4623 13.5686 23.864 11.36 23.864C9.81169 23.864 8.31079 23.5987 6.85468 23.0675C5.3939 22.5106 4.24808 21.801 3.39755 20.9504L2.91062 20.4635L2.59836 21.0773L1.55436 23.1293L1.39403 23.4444L1.63772 23.7006C2.64312 24.7576 4.039 25.5857 5.79394 26.2036Z" stroke="#2C2C2C"/>
+        <path d="M35 0.5H34.5V1V26.2V26.7H35H37.664H38.164V26.2V1V0.5H37.664H35Z" stroke="#2C2C2C"/>
+        <path d="M54.772 26.7H55.0955L55.2281 26.4049L58.1195 19.968H71.5125L74.4039 26.4049L74.5365 26.7H74.86H77.668H78.4463L78.1227 25.9921L66.6027 0.79212L66.4692 0.5H66.148H63.52H63.1988L63.0653 0.79212L51.5453 25.9921L51.2217 26.7H52H54.772ZM59.539 16.808L64.816 4.99767L70.093 16.808H59.539Z" stroke="#2C2C2C"/>
+        <path d="M113.56 1V0.5H113.06H110.432H109.932V1V20.0142L94.5876 0.689084L94.4374 0.5H94.196H92H91.5V1V26.2V26.7H92H94.664H95.164V26.2V7.18828L110.472 26.5105L110.622 26.7H110.864H113.06H113.56V26.2V1Z" stroke="#2C2C2C"/>
+        <path d="M146.98 13.316H146.48V13.816V22.0516C144.817 23.1805 142.796 23.756 140.392 23.756C138.429 23.756 136.679 23.3181 135.128 22.4515C133.572 21.5819 132.353 20.3962 131.462 18.8896C130.575 17.3881 130.128 15.701 130.128 13.816C130.128 11.931 130.575 10.2439 131.462 8.74236L131.462 8.74237L131.464 8.73953C132.354 7.21046 133.571 6.02742 135.123 5.1832L135.125 5.18197C136.702 4.31385 138.465 3.876 140.428 3.876C143.382 3.876 145.784 4.81755 147.673 6.68369L148.03 7.03675L148.381 6.67773L150.037 4.98573L150.369 4.64665L150.048 4.29747C148.889 3.03728 147.466 2.09471 145.79 1.46869C144.119 0.8207 142.294 0.5 140.32 0.5C137.701 0.5 135.337 1.06895 133.24 2.21745C131.145 3.36438 129.495 4.96398 128.297 7.01025C127.097 9.03674 126.5 11.3095 126.5 13.816C126.5 16.323 127.097 18.6071 128.296 20.6566L128.298 20.6589C129.496 22.6814 131.147 24.2683 133.24 25.4146C135.336 26.5627 137.688 27.132 140.284 27.132C142.113 27.132 143.86 26.8476 145.522 26.2769C147.187 25.7056 148.637 24.8824 149.866 23.8038L150.036 23.6545V23.428V13.816V13.316H149.536H146.98Z" stroke="#2C2C2C"/>
+        </svg>
+    </div>
     <ul class="nav-list">
       <li><a class="nav-links" href="index.html">Home</a></li>
       <li><a class="nav-links" href="about.html">About</a></li>
-      <li><a class="nav-links" href="">Contact</a></li>
+      <li><a class="nav-links" href="skill.html">Skills</a></li>
+      <li><a class="nav-links" href="">Works</a></li>
     </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
   </nav>
 
   <main data-router-wrapper>
     <section data-router-view="home" class="home">
       <div class="home-content">
-        <div class="home-presentation">
-          <h1>Seamless Transition</h1>
-          <p>Beautiful Transition between html pages</p>
+        <div class="home-presentation row">
+          <div class="col-sm-7">
+            <div class="home-title">
+              <h3>嗨! 我是</h3>
+              <h1>戴于翔 </h1>
+              <p>畢業於正修科技大學資管系，擅長使用影像軟體進行設計與編排，也會使用html、css語法進行網頁相關設計，<br> 雖然沒有網頁設計的相關實務經驗，但自認學習能力不差，學習速度也算快，想嘗試挑戰網頁設計和UI/UX這方面的發展。
+              </p>
+              <h6>GRAPHIC & WEB</h6>
+            </div>
+          </div>
+          <div class="col-sm-5 img-ontop">
+            <div class="imgbox order">
+              <div class="imgbox__inner">
+                <img src="./image/CV-hoto2.jpg" alt="">
+                <div class="imgout-border"></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <img src="./image/1.jpg" alt="home">
       </div>
     </section>
   </main>
 
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script src="./JS/index.js"></script>
 </body>
 
